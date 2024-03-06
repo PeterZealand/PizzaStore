@@ -50,7 +50,7 @@ namespace PizzaStore
         {
             return $"Nr.{MenuNumber}: " +
                 $"{PizzaName} \n" +
-                $"Price: {Price} \n";
+                $"Price: {Price}kr. \n";
         }
 
         #endregion

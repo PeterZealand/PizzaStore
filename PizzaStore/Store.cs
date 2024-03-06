@@ -46,14 +46,14 @@ namespace PizzaStore
             Console.WriteLine("* * * * * * * * * * * * * * * * * * * *");
 
             //creation of Pizzas
-            Pizza pizza1 = new Pizza(1, "Calzone", 80);
-            Pizza pizza2 = new Pizza(2, "Hawaii", 70);
-            Pizza pizza3 = new Pizza(3, "Ham", 60);
+            Pizza pizza1 = new Pizza(1, "Margherita", 69);
+            Pizza pizza2 = new Pizza(3, "Capricciosa", 80);
+            Pizza pizza3 = new Pizza(2, "Vesuvio", 75);
 
             //creation of Customers
-            Customer customer1 = new Customer("Peter", "Holbæk", 12345678);
-            Customer customer2 = new Customer("Morten", "Roskilde", 87654321);
-            Customer customer3 = new Customer("Paprika", "Hårlev", 13245768);
+            Customer customer1 = new Customer("Peter", "Holbæk", 12345678,true);
+            Customer customer2 = new Customer("Morten", "Roskilde", 87654321, false);
+            Customer customer3 = new Customer("Paprika", "Hårlev", 13245768,true);
 
             //creation of Orders
             Order order1 = new Order(customer1, pizza1);
@@ -63,9 +63,17 @@ namespace PizzaStore
 
             //layout for console and the use of the ToString() method gathered in the Order Class
             Console.WriteLine();
-            Console.WriteLine("Todays Menu?");
+            Console.WriteLine("Todays Menu:");
             Console.WriteLine("* * * * * * * * * * * * * * * * * * * *");
-            Console.WriteLine();
+            Console.WriteLine("1. Margherita - 69kr");
+            Console.WriteLine("Tomato & Cheese");
+            Console.WriteLine("");
+            Console.WriteLine("2. Vesuvio - 75kr");
+            Console.WriteLine("Tomato, Cheese & Ham");
+            Console.WriteLine("");
+            Console.WriteLine("3. Capricciosa - 80kr");
+            Console.WriteLine("Tomato, Cheese, Ham & Mushrooms");
+            Console.WriteLine("");
             Console.WriteLine("* * * * * * * * * * * * * * * * * * * *");
             Console.WriteLine();
 
