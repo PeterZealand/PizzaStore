@@ -78,7 +78,7 @@ namespace PizzaStore
                 TotalPrice = TotalPrice * 0.95;
             }
 
-           return TotalPrice;  
+           return Math.Round(TotalPrice, 2);
         }
         //Method for console writing info from Order class + info from the pizza and custommer class, used as an invoice with extra discount info if the Customer is a customer club member
         public override string ToString()
